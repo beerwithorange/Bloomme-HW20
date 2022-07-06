@@ -1,0 +1,240 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#F50065;
+    --secondary-color:#FFD008;
+}
+body{
+    background: rgb(27,27, 27);
+   
+}
+p{
+    font-family: titillium web;
+}
+h1,h2,h3,h4{
+    font-family: alonica;
+}
+/* nav bar---------------------- */
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-brand{
+    font-family: aclonica;
+    color: var(--primary-color);
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    /* padding-right: 1.5rem; */
+    padding-left: 1.5rem;
+}
+}
+
+/* header--------------- */
+.custombg{
+    background: black url(/images/succulent.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    /* margin-top: 70px; */
+
+}
+.custombg h1{
+    color: white;
+    font-family: aclonica;
+    font-size: 3rem;
+}
+.custombg p{
+    color: white;
+}
+.screen{
+    background: rgba(0,0,0, .3);
+    padding: 1rem 2rem;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: inset 0 0 20px 0px;
+    
+}
+/* card-------------------- */
+.card-img-top{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 10px;
+}
+.card-img-top:hover{
+transform: scale(.95);
+}
+.card{
+    height: 100%;
+}
+.card-title{
+    font-family: titillium web;
+    font-weight: 500;
+}
+.btn-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* .btn-warning{
+    display: block;
+    margin: auto;
+} */
+
+/* mailing list--------------- */
+.mb-5{
+    color: whitesmoke;
+}
+.mail-form{
+    color: whitesmoke;
+}
+.btn-submit{
+    background: var(--primary-color);
+    border: none;
+}
+.btn-submit:hover{
+    opacity: .7;
+    background: #F50065;
+}
+/* gallery----------------- */
+.gallery{
+   padding: 10px;
+   max-width: 1100px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   overflow: hidden;
+   grid-template-rows: 200px 250px 300px;
+   gap: 10px;
+   margin-block: 30px;
+ 
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery :nth-child(1){
+    grid-row:auto/span 2;
+}
+.gallery :nth-child(4){
+    grid-column:auto/span 2;
+}
+.gallery :nth-child(5){
+    grid-column:auto/span 2;
+}
+
+@media(max-width:700px){
+    .gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr
+    }
+}
+
+/* return policy---------------- */
+.wrapper{
+    width: 100%;
+    background-color: #F50065;
+    /* margin-bottom: 100px; */
+}
+.return{
+    max-width: 1100px;
+    margin: auto;
+    color: antiquewhite;
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}
+.wrapper h1{
+    flex: 2;
+    font-family: aclonica ;
+}
+.detail{
+    flex: 3;
+}
+@media(max-width:1000px){
+    .return{
+        flex-direction: column;
+    }
+}
+/* footer---------------------- */
+.footer{
+    width: 100%;
+    min-height: 30vh;
+    background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url(/images/pawel-czerwinski-lWBZ01XRRoI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.footer p{
+   color: rgb(240, 237, 237); 
+}
+.social-links{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+.icon{
+    fill: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+    
+}
+.address, .social{
+    flex: 1;
+}
+.icon-container{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: solid 1px var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon:hover{
+    fill: var(--primary-color);
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social h3{
+    margin-right: 20px;
+    color: rgb(249, 249, 249);
+}
+
+@media(max-width:600px){
+    .return-footer{
+        flex-direction: column;
+    }
+}
+@media(max-width:800px){
+    .social{
+        flex-direction: column;
+    }
+}
+.mb-5{
+    font-family:aclonica ;
+    font-weight: 300;
+}
+.return-footer{
+    max-width: 1100px;
+    margin: auto;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+

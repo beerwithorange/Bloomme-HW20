@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flower shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Courgette&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/flower.css" />
+  </head>
+  <body>
+    <!-- nav bar------------------------->
+    <div class="container navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-2" href="#">Bloomme</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- header hero image-------------------- -->
+    <div class="container-fluid custombg">
+      <div class="screen">
+        <h1 class="fw-bold">Visit Our Shop</h1>
+        <p class="fs-3">A happy selection of indoor plants for your home</p>
+        <button type="button" class="btn btn-outline-warning px-5">SHOP</button>
+      </div>
+    </div>
+    <!-- card section---------------------- -->
+    <h1 class="display-4 text-center pt-5 text-white">Type of Plant</h1>
+    <div class="container pb-5">
+      <div class="row pt-5">
+        <div class="col-sm mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/images/cactus-bunddle.jpg"
+              alt="string of pearl"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Succulent</h4>
+              <p>Window loving and the toughest of them all.</p>
+            </div>
+            <div class="btn-center">
+              <button type="button" class="btn btn-warning px-5">Shop</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/images/hanging.jpg"
+              alt="string of pearl"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hanging Plants</h4>
+              <p>Anything from string of pearl to pothos, we have you covred</p>
+            </div>
+            <div class="btn-center">
+              <button type="button" class="btn btn-warning px-5">Shop</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/images/flower.jpg"
+              alt="string of pearl"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Flower</h4>
+              <p>Easy to care for selection of flowers.</p>
+            </div>
+            <div class="btn-center">
+              <button type="button" class="btn btn-warning px-5">Shop</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/images/floor plants.jpg"
+              alt="string of pearl"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Floor Plants</h4>
+              <p>Potted plants for your floor or table.</p>
+            </div>
+            <div class="btn-center">
+              <button type="button" class="btn btn-warning px-5">Shop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mailing list--------------------------- -->
+      <div class="row mt-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3 class="mb-5">Join Our Mailing List:</h3>
+        </div>
+        <div class="col-sm mail-form">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text text-white-50">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="col-12 col-md-2">
+          <button
+            type="submit"
+            class="btn btn-primary btn-submit"
+            style="margin-top: 2em; width: 100%"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div>
+        <img src="/images/brina-blum-DBFoMExVPeI-unsplash.jpg" alt="" />
+      </div>
+      <div>
+        <img src="/images/jonathan-borba-00fCk2lZn1c-unsplash.jpg" alt="" />
+      </div>
+      <div>
+        <img src="/images/kam-idris-_HqHX3LBN18-unsplash.jpg" alt="" />
+      </div>
+      <div>
+        <img src="/images/laura-chouette-mfvTtNPjoPY-unsplash.jpg" alt="" />
+      </div>
+      <div>
+        <img src="/images/mikey-harris-kw0z6RyvC0s-unsplash.jpg" alt="" />
+      </div>
+      <div>
+        <img src="/images/ron-mcclenny-9yI8eQ9mdvY-unsplash.jpg" alt="" />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="return">
+        <div class="headline">
+          <h1>Return Policy</h1>
+        </div>
+        <div class="detail">
+          <p>
+            We will gladly accept refunds up to 7 days for store merchandise.
+            All items being returned must be in the same condition as when
+            purchased. A receipt is required. Please note that ALL plants,
+            Artist pots, Terrariums and potted plants are non-refundable. Please
+            Note: We are happy to hold your items after purchase for up to 5
+            days. (including online purchases) After 5 days, your items will be
+            forfeited & you will not receive a refund. Plants waiting to be
+            repotted should be picked up within 5 days after we call for pick
+            up. We are not responsible for the care of your plants after
+            purchase. With an exception of plants waiting to be repotted.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="return-footer">
+        <div class="address">
+          <a class="navbar-brand fw-bold fs-2" href="#">Bloomme</a>
+          <p>3714 mission St.</p>
+          <p>San Francsico, CA 93300</p>
+        </div>
+        <div class="social">
+          <h3>Follow us!</h3>
+          <div class="social-links">
+            <span class="icon-container">
+              <svg class="icon icon-yellow">
+                <use xlink:href="/images/sprite.svg#linkedin-in-brands"></use>
+              </svg>
+            </span>
+            <span class="icon-container">
+              <svg class="icon">
+                <use xlink:href="/images/sprite.svg#instagram-brands"></use>
+              </svg>
+            </span>
+            <span class="icon-container">
+              <svg class="icon">
+                <use xlink:href="/images/sprite.svg#tumblr-brands"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
